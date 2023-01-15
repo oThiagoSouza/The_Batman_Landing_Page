@@ -21,7 +21,7 @@ function styles () {
     .pipe(gulp.dest('./dist/css'));
 }
 
-exports.default = gulp.parallel(imageCompress);
+exports.default = gulp.parallel(imageCompress, styles, scripts);
 
 exports.watch = function () {
     gulp.watch('./src/styles/*.scss', gulp.parallel(styles));
