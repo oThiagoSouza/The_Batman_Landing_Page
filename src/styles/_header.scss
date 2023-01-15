@@ -1,0 +1,41 @@
+@use 'variaveis';
+
+.header {
+    position: sticky;
+    left: 0;
+    top: 0;
+
+    &__container {
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+        
+
+        img {
+            max-width: 80px;
+            width: 100%;
+            margin: 5px;
+        }
+}
+    &__list {
+        display: flex;
+        align-items: center;
+        &__item {
+            a {
+                text-decoration: none;
+                margin: 5px;
+                background-color: variaveis.$thirdColor;
+                color: #000;
+                padding: 8px 16px;
+                border-radius: 5px;
+                text-transform: uppercase;
+                font-weight: bold;
+
+                &:hover {
+                    
+                    transition: ease .5s all;
+                }
+            }
+        }
+    }
+}

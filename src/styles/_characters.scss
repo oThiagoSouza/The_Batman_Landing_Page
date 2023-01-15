@@ -1,0 +1,33 @@
+@use 'variaveis';
+
+.characters {
+    padding: 3.6vw;
+    
+    &__title {
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        &__item {
+            text-align: center;
+            margin-bottom: 20px;
+
+            img{
+                max-width: 450px;
+                max-height: 180px;
+                object-fit: cover;
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid rgb(104, 104, 104);
+            }
+
+            h3 {
+                color: variaveis.$secondaryColor;
+            }
+        }
+    }
+}

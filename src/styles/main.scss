@@ -1,0 +1,55 @@
+@use 'variaveis';
+@use 'hero';
+@use 'characters';
+@use 'slider';
+@use 'header';
+
+@mixin text($fontSize: 22px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$thirdColor;
+}
+
+@mixin title($fontSize: 32px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$primaryColor;
+}
+
+.title--small {
+    @include title(28px);
+    color:variaveis.$primaryColor;
+}
+.title {
+    @include title(42px);
+    color:variaveis.$primaryColor;
+}
+.title--big {
+    @include title(50px);
+    color:variaveis.$primaryColor;
+}
+
+.text--small {
+    @include text(16px);
+    color: variaveis.$thirdColor;
+}
+.text {
+    @include text;
+    color: variaveis.$thirdColor;
+}
+.text--big {
+    @include text(30px);
+    color: variaveis.$thirdColor;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: variaveis.$corDeFundo;
+}

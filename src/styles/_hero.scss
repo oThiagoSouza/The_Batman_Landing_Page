@@ -1,0 +1,59 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.6vw;
+    background-image: url('../../dist/images/the_batman_cover.png');
+    background-size: cover;
+    min-height: 80vh;
+
+    &__form {
+            
+        &__label {
+            color: variaveis.$thirdColor;
+            display: block;
+            text-align: center;
+            margin-top: 8px;
+        }
+
+        &__input {
+            margin: 8px;
+        }
+
+        &__btn {
+            display: block;
+            margin: 0 auto;
+            padding: 4px 22px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 600px;
+        height: 450px;
+        margin: 0 auto;
+        justify-content: center;
+        background-color: rgba(0,0,0, 0.7);
+        border-radius: 10px;
+
+        h3 {
+            text-align: center;
+        }
+        
+        img {
+            max-width: 360px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: end;
+        &__item{
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
