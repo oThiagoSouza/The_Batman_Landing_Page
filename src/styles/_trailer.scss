@@ -1,0 +1,30 @@
+@use 'variaveis';
+
+.trailer {
+    padding: 3.6vw;
+
+    a {
+        text-decoration: none;
+        margin-top: 24px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 36px;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &__video {
+            video {
+                padding: 24px;
+                box-shadow: 4px 4px 10px #ccc;
+                width: 940px;
+                align-items: center;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

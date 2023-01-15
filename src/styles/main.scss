@@ -3,6 +3,8 @@
 @use 'characters';
 @use 'slider';
 @use 'header';
+@use 'trailer';
+@use 'footer';
 
 @mixin text($fontSize: 22px) {
     font-size: $fontSize;
@@ -52,4 +54,19 @@
 
 body {
     background-color: variaveis.$corDeFundo;
+}
+
+.button {
+    text-decoration: none;
+    margin: 5px;
+    background-color: variaveis.$thirdColor;
+    color: #000;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover {
+        transition: ease .5s all;
+    }
 }
