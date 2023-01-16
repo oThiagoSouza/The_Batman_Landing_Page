@@ -1,0 +1,138 @@
+@use 'variaveis';
+@use 'hero';
+@use 'characters';
+@use 'slider';
+@use 'header';
+@use 'trailer';
+@use 'footer';
+
+@media screen and (max-width: 768px) {
+    * {
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .hero {
+        background-image: url('../../dist/images/the_batman_cover.png');
+        object-fit: scale-down;
+        background-size: cover;
+        background-repeat: no-repeat;
+        &__content {
+            margin-top: 120px;
+            max-width: 450px;
+            height: 350px;
+            h3 {
+                font-size: 22px;
+            }
+        }
+
+        &__form {
+            &__input {
+                margin: 8px;
+                padding: 6px 12px;
+                width: 200px;
+                border: none;
+                border-radius: 5px;
+            }
+        }
+
+        &__logo {
+            width: 120px;
+        }
+    }
+
+    .trailer {
+        &__content {
+            &__video{
+                video {
+                    width: 620px;
+                }
+            }
+        }
+    }
+
+    .characters {
+        h2 {
+            font-size: 28px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__item {
+                text-align: center;
+                margin-bottom: 20px;
+    
+                img{
+                    max-width: 280px;
+                    max-height: 180px;
+                    object-fit: cover;
+                    aspect-ratio: calc(4/2);
+                    width: 100%;
+                    border-radius: 5px;
+                    border: 1px solid rgb(104, 104, 104);
+                }
+    
+                h3 {
+                    color: variaveis.$secondaryColor;
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .slider {
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 28px;
+        }
+
+        &__slideshow {
+            max-width: 500px;
+            position: relative;
+            margin: auto;
+
+            h3 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+        .slider__btn {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 8px 16px;
+            margin-top: -200px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.4s ease;
+            user-select: none;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+        }
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    #onde_assistir {
+        margin-bottom: 120px;
+
+        h2 {
+            font-size: 28px;
+        }
+    }
+}

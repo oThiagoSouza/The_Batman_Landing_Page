@@ -7,19 +7,8 @@
     min-height: 80vh;
     margin-top: -70px;
 
-    @media (max-width:768px) {
-        background-image: url('../../dist/images/the_batman_cover_celular.png');
-        object-fit: cover;
-        aspect-ratio: calc(4/4);
-    }
 
     &__form {
-
-        @media (max-width:768px){
-            max-width: 250px;
-            width: 100%;
-        }
-
 
         &__label {
             color: variaveis.$thirdColor;
@@ -34,10 +23,6 @@
             width: 350px;
             border: none;
             border-radius: 5px;
-
-            @media (max-width:768px){
-                width: 200px;
-            }
         }
 
         &__btn {
@@ -69,22 +54,12 @@
         background-color: rgba(0,0,0, 0.7);
         border-radius: 10px;
 
-        @media (max-width:768px) {
-            width: 300px;
-        }
-
-        
-
         h3 {
             text-align: center;
         }
         
         img {
             max-width: 360px;
-
-            @media (max-width:768px){
-                width: 150px;
-            }
         }
     }
 

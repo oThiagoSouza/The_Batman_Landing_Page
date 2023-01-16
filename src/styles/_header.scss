@@ -8,6 +8,7 @@
     z-index: 1;
     transition: background-color .5s ease-in;
 
+
     &--is-hidden {
         background-color: rgba(variaveis.$corDeFundo, 0.2);
         transition: background-color .5s ease;
