@@ -74,7 +74,26 @@
         }
     }
 
-    @media (min-width: 640px) {
-        padding: 0;
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+        &__content {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 1024px) and (min-width:641px) {
+
+        &__content {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
     }
 }

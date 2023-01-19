@@ -27,4 +27,24 @@
             }
         }
     }
+
+    @media (max-width:640px) {
+        &__content {
+
+            video {
+                padding: 0;
+                max-width: 400px;
+            }
+        }
+    }
+
+    @media (max-width:1024px) and (min-width:641px){
+        &__content {
+
+            video {
+                padding: 0;
+                max-width: 100%;
+            }
+        }
+    }
 }

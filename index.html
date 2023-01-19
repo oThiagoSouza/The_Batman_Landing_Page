@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__container">
+        <div class="container">
             <h1 class="header__logo">
                 <img src="./dist/images/the_batman_text.png" alt="The Batman">
             </h1>
@@ -28,21 +28,24 @@
         </div>
     </header>
     <section id="hero" class="hero">
-        <div class="hero__content">
-        <div class="hero__branding">
-            <img class="hero__logo" src="./dist/images/the_batman_text.png" alt="The Batman">
-        </div>
-            <h3 class="title--small">Informe seu email para receber conteúdo em primeira mão!</h3>
-            <div class="hero__form">
-                <label class="hero__form__label" for="email">Seu e-mail: </label>
-                <p class="text--small" id="hero__msgEnvio"></p>
-                <input required class="hero__form__input" id="email" type="email">
-            </div>
-            <button class="hero__form__btn" type="submit">Enviar</button>
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__branding">
+                    <img class="hero__logo" src="./dist/images/the_batman_text.png" alt="The Batman">
+                </div>
+                    <h3 class="title--small">Informe seu email para receber conteúdo em primeira mão!</h3>
+                    <div class="hero__form">
+                        <label class="hero__form__label" for="email">Seu e-mail: </label>
+                        <p class="text--small" id="hero__msgEnvio"></p>
+                        <input required class="hero__form__input" id="email" type="email">
+                    </div>
+                    <button class="hero__form__btn" type="submit">Enviar</button>
+                </div>
         </div>
     </section>
     <section class="characters">
-        <h2 class="characters__title title--big">Elenco</h2>
+        <div class="container">
+            <h2 class="characters__title title--big">Elenco</h2>
         <ul class="characters__list">
             <li class="characters__list__item">
                 <img class="character" src="./dist/images/Robert_Pattinson.png" alt="Batman">
@@ -101,9 +104,11 @@
                 </p>
             </li>
         </ul>
+        </div>
     </section>
     <section class="slider">
-        <h2 class="title--big">Personagens Principais</h2>
+        <div class="container">
+            <h2 class="title--big">Personagens Principais</h2>
         <div class="slider__slideshow">
             <div class="slider__imageSlider fade">
                 <img src="./dist/images/character_bruce_batman.jpg" alt="Batman">
@@ -164,58 +169,62 @@
             <a class="slider__btn previous" onclick="setSlides(-1)"> < </a>
             <a class="slider__btn next" onclick="setSlides(1)"> > </a>
         </div>
+        </div>
     </section>
     <section id="onde_assistir" class="trailer">
-        <h2 class="title">Trailer</h2>
-        <div class="trailer__content">
-            <div class="trailer__content__video">
-                <video class="video" controls="true" src="./src/video/BATMAN  Trailer 3 Oficial Dublado (1).mp4"></video>
-            </div>
-            <div class="movie__link">
-                <a href="#" class="text--big">Clique aqui para assistir agora na HBO Max!</a>
+        <div class="container">
+            <h2 class="title">Trailer</h2>
+            <div class="trailer__content">
+                <div class="trailer__content__video">
+                    <video class="video" controls="true" src="./src/video/BATMAN  Trailer 3 Oficial Dublado (1).mp4"></video>
+                </div>
+                <div class="movie__link">
+                    <a href="#" class="text--big">Clique aqui para assistir agora na HBO Max!</a>
+                </div>
             </div>
         </div>
-        
     </section>
     <footer class="footer">
-        <h3 class="title--small">Nos acompanhe em nossas mídias sociais.</h3>
-        <div class="footer__content">
-            <div class="logo">
-                <ul class="logo__list">
-                    <li class="logo__list__item">
-                        <a href="https://facebook.com">
-                            <img src="./dist/images/logos/facebook.svg" alt="">
-                        </a>
+        <div class="container">
+            <h3 class="title--small">Nos acompanhe em nossas mídias sociais.</h3>
+            <div class="footer__content">
+                <div class="logo">
+                    <ul class="logo__list">
+                        <li class="logo__list__item">
+                            <a href="https://facebook.com">
+                                <img src="./dist/images/logos/facebook.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="logo__list__item">
+                            <a href="https://instagram.com">
+                                <img src="./dist/images/logos/instagram.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="logo__list__item">
+                            <a href="https://whatsapp.com">
+                                <img src="./dist/images/logos/whatsapp.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__list__item">
+                        <a class="text--small" href="#">Documentação</a>
                     </li>
-                    <li class="logo__list__item">
-                        <a href="https://instagram.com">
-                            <img src="./dist/images/logos/instagram.svg" alt="">
-                        </a>
+                    <li class="footer__list__item">
+                        <a class="text--small" href="#">Termos de Uso</a>
                     </li>
-                    <li class="logo__list__item">
-                        <a href="https://whatsapp.com">
-                            <img src="./dist/images/logos/whatsapp.svg" alt="">
-                        </a>
+                    <li class="footer__list__item">
+                        <a class="text--small" href="#">Contate-nos</a>
+                    </li>
+                    <li class="footer__list__item">
+                        <a class="text--small" href="#">Sobre nós</a>
+                    </li>
+                    <li class="footer__list__item">
+                        <a class="text--small" href="#">Cookies</a>
                     </li>
                 </ul>
             </div>
-            <ul class="footer__list">
-                <li class="footer__list__item">
-                    <a class="text--small" href="#">Documentação</a>
-                </li>
-                <li class="footer__list__item">
-                    <a class="text--small" href="#">Termos de Uso</a>
-                </li>
-                <li class="footer__list__item">
-                    <a class="text--small" href="#">Contate-nos</a>
-                </li>
-                <li class="footer__list__item">
-                    <a class="text--small" href="#">Sobre nós</a>
-                </li>
-                <li class="footer__list__item">
-                    <a class="text--small" href="#">Cookies</a>
-                </li>
-            </ul>
         </div>
     </footer>
 
