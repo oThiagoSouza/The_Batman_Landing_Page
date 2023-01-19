@@ -5,7 +5,6 @@
 @use 'header';
 @use 'trailer';
 @use 'footer';
-@use 'mediaquery';
 
 
 @mixin text($fontSize: 22px) {
